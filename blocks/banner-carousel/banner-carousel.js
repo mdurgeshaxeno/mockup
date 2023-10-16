@@ -1,22 +1,21 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
-  /* change to ul, li */
-  const ul = document.createElement('ul');
-  ul.classList.add('owl-carousel', 'owl-theme', 'banner-carousel-list');
+  /* change to div */
+  const div = document.createElement('div');
+  div.classList.add('owl-carousel', 'owl-theme', 'banner-carousel-list');
   [...block.children].forEach((row) => {
-    const li = document.createElement('li');
-    li.classList.add('owl-item');
-    li.innerHTML = row.innerHTML;
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+    const childDiv = document.createElement('div');
+    childDiv.innerHTML = row.innerHTML;
+    [...childDiv.children].forEach((innerDiv) => {
+      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'cards-card-image';
+      else innerDiv.className = 'cards-card-body';
     });
-    ul.append(li);
+    div.append(childDiv);
   });
-  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
-  block.append(ul);
+  block.append(div);
 
   // Add the owl carousel script here
   $(document).ready(function() {
