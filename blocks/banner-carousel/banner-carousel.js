@@ -13,7 +13,7 @@ export default function decorate(block) {
     });
     div.append(childDiv);
   });
-  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '1024' }])));
   block.textContent = '';
   block.append(div);
 
