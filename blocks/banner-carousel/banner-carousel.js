@@ -27,7 +27,7 @@ export default function decorate(block) {
       dots: false,
       nav: true,
       autoplay: true,
-      autoplayTimeout: 1000,
+      autoplayTimeout: 5000,
       autoplayHoverPause: true
     });
   });
