@@ -102,7 +102,7 @@ p {
   margin: 0 0 1em;
 }
 
-section:empty,
+.section:empty,
 p:empty {
  display: none;
 }
