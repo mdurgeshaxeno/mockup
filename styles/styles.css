@@ -388,6 +388,14 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
 
 
 /* 3 Section */
+.section.section-thr.div-container > div {
+ max-width: none;
+}
+.section.section-thr {
+ float: left;
+ width: 300px;
+ padding: 0 30px;
+}
 .section.section-thr .columns > div > div:first-child {
     flex: .5;
 }
@@ -397,33 +405,6 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
 }
 .section.section-thr p {
   font-size: var(--body-font-size-xs);
-}
-.section.section-thr .columns picture {
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-.section.section-thr .columns picture * {
-    height: 100%;
-    width: auto;
-    max-width: none;
-}
-.section.section-thr .columns table {
-  margin-bottom: 35px;
-}
-.section.section-thr .columns table tr {
-    vertical-align: top;
-}
-.section.section-thr .columns table tr ~ tr td {
-  padding: 15px;
-  background-color: #f2f2f2;
-}
-.section.section-thr .columns table tr td {
-  max-width: 210px;
-}
-.section.section-thr .columns table tr td p {
-  margin: 0;
 }
 .section.section-thr .button-container {
   text-align: center;
