@@ -19,7 +19,7 @@ export default function decorate(block) {
 
   // Add the owl carousel script here
   $(document).ready(function() {
-    var owl = $('.card-carousel-list');
+    var owl = $('.banner-carousel-list');
     owl.owlCarousel({
       loop: true,
       margin: 0,
