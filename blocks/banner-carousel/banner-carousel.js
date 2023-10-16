@@ -8,12 +8,12 @@ export default function decorate(block) {
     const childDiv = document.createElement('div');
     childDiv.innerHTML = row.innerHTML;
     [...childDiv.children].forEach((innerDiv) => {
-      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'cards-card-image';
-      else innerDiv.className = 'cards-card-body';
+      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'banner-image';
+      else innerDiv.className = 'banner-body';
     });
     div.append(childDiv);
   });
-  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '1024' }])));
   block.textContent = '';
   block.append(div);
 
