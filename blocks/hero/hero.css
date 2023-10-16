@@ -56,7 +56,7 @@ main .hero-content h2 {
 }
 
 main .hero-content a:any-link {
-  display: block;
+/* display: block; */
   font-family: var(--body-font-family);
   color: var(--background-color);
   text-align: center;
