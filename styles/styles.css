@@ -355,6 +355,9 @@ main .section-slider .button-container .button:focus {
     background-color: var(--background-color);
     color: #000000; 
 }
+main .section-slider h2 {
+   font-size: 70px;
+} 
 
 /* 1 Section */
 main .div-container.section-one > div {
