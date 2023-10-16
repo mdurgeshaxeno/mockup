@@ -447,6 +447,7 @@ main .section.section-eig.hero-container>div {
 main .section.section-eig.hero-container .hero-content {
   max-width: 750px;
   margin: auto;
+  color: #ffffff;
 }
 main .section.section-eig .hero-content h2 {
   font-size: 70px;
