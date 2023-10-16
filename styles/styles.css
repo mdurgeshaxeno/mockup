@@ -303,12 +303,12 @@ main .section[data-section-status='initialized'] {
 main .section h2 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 70px;
   margin: 0
 }
 @media only screen and (max-width: 1024px) {
   main .section h2 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -355,9 +355,6 @@ main .section-slider .button-container .button:focus {
     background-color: var(--background-color);
     color: #000000; 
 }
-main .section-slider h2 {
-   font-size: 70px;
-} 
 
 /* 1 Section */
 main .div-container.section-one > div {
@@ -366,7 +363,9 @@ main .div-container.section-one > div {
 main .div-container.section-one p {
   font-size: var(--heading-font-size-s);
 }
-
+main .div-container.section-one h2 {
+   font-size: 80px;
+} 
 
 /* 2 Section */
 main .section.section-two .cards > ul {
