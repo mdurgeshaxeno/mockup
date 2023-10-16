@@ -345,12 +345,16 @@ main .section .button-container .button:focus {
 }
 
 /* Slider Section */
-main .section-slider.banner-carousel-container .control-container .prev,
-main .section-slider.banner-carousel-container .control-container .next,
-main .section-slider.banner-carousel-container .carousel-slide picture::before {
-  display: none;
+main .section-slider .button-container .button {
+  color: var(--text-color-white);
+  border-color: #ffffff;
 }
-
+main .section-slider .button-container .button:before,
+main .section-slider .button-container .button:hover,
+main .section-slider .button-container .button:focus {
+    background-color: var(--background-color);
+    color: #000000; 
+}
 
 /* 1 Section */
 main .div-container.section-one > div {
