@@ -13,7 +13,33 @@ export default function decorate(block) {
     });
     ul.append(li);
   });
-  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
   block.textContent = '';
   block.append(ul);
+
+  // Add the owl carousel script here
+  $(document).ready(function() {
+    var owl = $('.card-carousel-list');
+    owl.owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: false,
+      nav: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  });
 }
