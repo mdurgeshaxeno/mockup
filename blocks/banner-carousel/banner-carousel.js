@@ -24,8 +24,8 @@ export default function decorate(block) {
       loop: true,
       margin: 0,
       items: 1,
-      dots: false,
-      nav: true,
+      dots: true,
+      nav: false,
       autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: true
