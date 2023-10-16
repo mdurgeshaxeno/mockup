@@ -391,13 +391,13 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
 .section.section-thr.div-container > div {
  max-width: none;
 }
-.section.section-thr {
+.section.section-thr .columns-wrapper {
  float: left;
  width: 300px;
  padding: 0 30px;
 }
-.section.section-thr .columns > div > div:first-child {
-    flex: .5;
+.section.section-thr .card-carousel-wrapper {
+ overflow: auto;
 }
 .section.section-thr h3 {
     font-size: 25px;
