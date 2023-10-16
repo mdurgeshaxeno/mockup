@@ -8,8 +8,8 @@ export default function decorate(block) {
     const childDiv = document.createElement('div');
     childDiv.innerHTML = row.innerHTML;
     [...childDiv.children].forEach((innerDiv) => {
-      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'banner-image';
-      else innerDiv.className = 'banner-body';
+      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'banner-body';
+      else innerDiv.className = 'banner-image';
     });
     div.append(childDiv);
   });
