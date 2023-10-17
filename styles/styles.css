@@ -413,8 +413,9 @@ main .section.section-thr.div-container {
 }
 .section.section-thr .button-container {
   text-align: center;
+  padding-left: 300px;
+  margin-top: 40px;
 }
-
 
 /* 5 Section */
 main .section.section-fiv h2 {
