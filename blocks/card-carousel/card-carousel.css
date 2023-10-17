@@ -1,1 +1,33 @@
-
+.card-carousel-container .owl-theme .owl-nav {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.card-carousel-container .owl-theme .owl-nav button {
+  position: relative;
+  font-size: 0;
+  width: 50px;
+  height: 3px;
+  margin: 0;
+  background: #df9926;
+}
+.card-carousel-container .owl-theme .owl-nav button ~ button {
+  margin-left: 20px;
+}
+.card-carousel-container .owl-theme .owl-nav button:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+.card-carousel-container .owl-theme .owl-nav button.owl-next:after {
+    border-left: 16px solid #df9926;
+    right: -14px;
+}
+.card-carousel-container .owl-theme .owl-nav button.owl-prev:after {
+    border-right: 16px solid #df9926;
+    left: -14px;
+}
