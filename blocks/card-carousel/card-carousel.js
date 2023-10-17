@@ -6,6 +6,7 @@ export default function decorate(block) {
   div.classList.add('owl-carousel', 'owl-theme', 'banner-carousel-list');
   [...block.children].forEach((row) => {
     const childDiv = document.createElement('div');
+    childDiv.classList.add('item');
     childDiv.innerHTML = row.innerHTML;
     [...childDiv.children].forEach((innerDiv) => {
       if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'cards-card-image';
