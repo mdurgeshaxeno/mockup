@@ -31,3 +31,26 @@
     border-right: 16px solid #df9926;
     left: -14px;
 }
+.card-carousel-container .owl-theme .owl-item .cards-card-image {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.card-carousel-container .owl-theme .owl-item .cards-card-image * {
+    height: 340px;
+    width: auto;
+    max-width: none;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: all 0.7s ease;
+}
+.card-carousel-container .owl-theme .owl-item:hover .cards-card-image * {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1);
+}
