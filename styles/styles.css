@@ -388,6 +388,11 @@ main .section.section-two .cards > ul > li > .cards-card-body:first-child {
 
 
 /* 3 Section */
+main .section.section-thr.div-container {
+    max-width: 1200px;
+    margin: auto;
+    display: inherit;
+}
 .section.section-thr.div-container > div {
  max-width: none;
 }
