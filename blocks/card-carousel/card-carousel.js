@@ -25,9 +25,7 @@ export default function decorate(block) {
       margin: 10,
       dots: false,
       nav: true,
-      autoplay: true,
-      autoplayTimeout: 1000,
-      autoplayHoverPause: true,
+      autoplay: false,
       responsiveClass: true,
       responsive: {
         0: {
