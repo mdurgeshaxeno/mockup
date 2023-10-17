@@ -1,7 +1,14 @@
+.card-carousel-container .card-carousel-list {
+    padding-top: 40px;
+}
+.card-carousel-container h2 {
+    padding-top: 20px;
+}
 .card-carousel-container .owl-theme .owl-nav {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: -14px;
+    right: 15px;
+    margin: 0;
 }
 .card-carousel-container .owl-theme .owl-nav button {
   position: relative;
@@ -12,7 +19,7 @@
   background: #df9926;
 }
 .card-carousel-container .owl-theme .owl-nav button ~ button {
-  margin-left: 20px;
+  margin-left: 38px;
 }
 .card-carousel-container .owl-theme .owl-nav button:after {
     content: "";
