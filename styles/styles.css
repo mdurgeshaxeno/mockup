@@ -427,19 +427,28 @@ main .section.section-six h2 {
   font-size: 50px;
   margin-bottom: 50px
 }
-main .section.section-six {
-  
-}
 
 /* 7 Section */
 main .section.section-sev h2 {
   font-size: 50px;
   margin-bottom: 50px
 }
-main .section.section-sev ul {
-  font-family: var(--fixed-font-family);
+main .section.section-sev.div-container {
+    max-width: 1200px;
+    margin: auto;
+    display: inherit;
 }
-
+.section.section-sev.div-container > div {
+ max-width: none;
+}
+.section.section-sev .columns-wrapper {
+ float: left;
+ width: 300px;
+ padding: 0 30px;
+}
+.section.section-sev .tabs-wrapper {
+ overflow: auto;
+}
 
 /* 8 Section */
 main .section.section-eig.hero-container .hero-content {
