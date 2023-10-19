@@ -1,5 +1,7 @@
 .tabs-body {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .tabs-body > * {
   flex: 0 0 auto;
