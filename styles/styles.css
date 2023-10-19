@@ -434,9 +434,6 @@ main .section.section-six ul {
 
 
 /* 8 Section */
-main .section.section-eig.hero-container>div {
-  max-width: 1200px;
-}
 main .section.section-eig.hero-container .hero-content {
   max-width: 750px;
   margin: auto;
