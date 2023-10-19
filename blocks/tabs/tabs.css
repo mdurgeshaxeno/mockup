@@ -1,5 +1,4 @@
 .tabs-carousel-list.owl-carousel .tabs-carousel-item {
-    width: 100%;
     padding: 25px;
     border: 1px solid #000;
     border-radius: 20px;
@@ -8,7 +7,6 @@
 .tabs-carousel-list.owl-carousel .tabs-title { display: none; }
 .tabs-carousel-list.owl-carousel .tabs-body {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -65,8 +63,4 @@
 }
 .tabs-carousel-list.owl-carousel .owl-item:nth-child(3) .tabs-carousel-item {
     border-color: #0f9ffa;
-}
-
-main .section.section-six.div-container .tabs-wrapper {
-    max-width: 860px;
 }
