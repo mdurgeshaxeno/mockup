@@ -34,14 +34,14 @@ div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
   $(document).ready(function () {
     var owl = $('.tabs-carousel-list');
     owl.owlCarousel({
-      loop: false,
-      items: 1,
+      autoplay: false,
       dots: true,
-      dotsData: true,
+      dotsData:true,
+      loop: false,
       margin: 0,
-      nav: true,
+      nav: false,
       autoHeight:true,
-      autoplay: false
+      items: 1
     });
   });
 }
