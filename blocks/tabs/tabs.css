@@ -66,3 +66,7 @@
 .tabs-carousel-list.owl-carousel .owl-item:nth-child(3) .tabs-carousel-item {
     border-color: #0f9ffa;
 }
+
+main .section.section-six.div-container .tabs-wrapper {
+    max-width: 860px;
+}
