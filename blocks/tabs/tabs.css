@@ -5,6 +5,7 @@
     border-radius: 20px;
     padding-bottom: 0;
 }
+.tabs-carousel-list.owl-carousel .tabs-title { display: none; }
 .tabs-carousel-list.owl-carousel .tabs-body {
     display: flex;
     width: 100%;
