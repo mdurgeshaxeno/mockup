@@ -437,6 +437,18 @@ main .section.section-sev.div-container {
     max-width: 1200px;
     margin: auto;
     display: inherit;
+    position: relative;
+}
+main .section.section-sev.div-container.bg-light-white:before {
+  content: "";
+  background: #f2f2f2;
+  position: absolute;
+  left: -20vw;
+  right: -20vw;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 .section.section-sev.div-container > div {
  max-width: none;
