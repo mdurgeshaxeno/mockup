@@ -9,7 +9,7 @@ export default function decorate(block) {
     childDiv.classList.add('tabs-carousel-item');
     childDiv.innerHTML = row.innerHTML;
     [...childDiv.children].forEach((innerDiv) => {
-      if (innerDiv.children.length === 1) innerDiv.className = 'tabs-image';
+      if (innerDiv.children.length == 1) innerDiv.className = 'tabs-title';
       else innerDiv.className = 'tabs-body';
     });
     div.append(childDiv);
