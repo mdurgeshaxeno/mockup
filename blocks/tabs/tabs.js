@@ -4,6 +4,7 @@ export default function decorate(block) {
   /* change to div */
   const div = document.createElement('div');
   div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
+  div.setAttribute('data-dot', 'your-value-here');
   [...block.children].forEach((row) => {
     const childDiv = document.createElement('div');
     childDiv.classList.add('tabs-carousel-item');
