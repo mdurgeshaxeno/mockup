@@ -398,7 +398,7 @@ main .section.section-thr.div-container {
 }
 .section.section-thr .columns-wrapper {
  float: left;
- width: 300px;
+ width: 330px;
  padding: 0 30px;
 }
 .section.section-thr .card-carousel-wrapper {
@@ -455,7 +455,7 @@ main .section.section-sev.div-container.bg-light-white:before {
 }
 .section.section-sev .columns-wrapper {
  float: left;
- width: 300px;
+ width: 330px;
  padding: 0 30px;
 }
 .section.section-sev .tabs-wrapper {
