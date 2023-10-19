@@ -39,7 +39,7 @@ div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
       dots: true,
       dotsData: true,
       margin: 0,
-      nav: false,
+      nav: true,
       autoHeight:true,
       autoplay: false
     });
