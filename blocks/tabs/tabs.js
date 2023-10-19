@@ -32,6 +32,7 @@ export default function decorate(block) {
       dotsData: true,
       margin: 0,
       nav: false,
+      autoHeight:true,
       autoplay: false
     });
   });
