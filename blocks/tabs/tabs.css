@@ -1,17 +1,17 @@
-.tabs-carousel-item {
+.tabs-carousel-list.owl-carousel .tabs-carousel-item {
     width: 100%;
     padding: 25px;
     border: 1px solid #000;
     border-radius: 20px;
     padding-bottom: 0;
 }
-.tabs-body {
+.tabs-carousel-list.owl-carousel .tabs-body {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.tabs-body > * {
+.tabs-carousel-list.owl-carousel .tabs-body > * {
   flex: 0 0 auto;
   width: 31%;
 }
@@ -24,4 +24,22 @@
     padding: 25px;
     cursor: pointer;
     margin-bottom: 25px;
+}
+.tabs-carousel-list.owl-carousel .owl-stage-outer {
+    padding-top: 40px;
+}
+.tabs-carousel-list.owl-carousel .owl-dots {
+    position: absolute;
+    top: 0;
+    margin: 0 !important;
+}
+.tabs-carousel-list.owl-carousel .owl-dots .owl-dot {
+    height: auto;
+    width: auto;
+    border: 1px solid grey;
+    padding: 8px 46px;
+    border-radius: 20px 20px 0 0;
+    margin: 0 20px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
