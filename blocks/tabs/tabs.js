@@ -24,7 +24,7 @@ export default function decorate(block) {
     owl.owlCarousel({
       loop: false,
       margin: 10,
-      dots: false,
+      dots: true,
       dotsData: true,
       nav: false,
       autoplay: false,
