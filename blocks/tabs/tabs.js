@@ -1,18 +1,26 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-
 export default function decorate(block) {
-  /* change to ul, li */
-  const ul = document.createElement('ul');
+  /* change to div with class names */
+  const tabSection = document.createElement('div');
+  tabSection.className = 'tab-section';
+  
   [...block.children].forEach((row) => {
-    const li = document.createElement('li');
-    while (row.firstElementChild) li.append(row.firstElementChild);
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'tab-image';
-      else div.className = 'tab-title';
-    });
-    ul.append(li);
+    const tabItem = document.createElement('div');
+    tabItem.className = 'tab-item';
+    while (row.firstElementChild) tabItem.append(row.firstElementChild);
+    
+    const divs = [...tabItem.children];
+    
+    // Check the number of divs and assign classes accordingly
+    if (divs.length === 2) {
+      divs[0].className = 'tab-head';
+      divs[1].className = 'tab-body';
+    }
+
+    tabSection.append(tabItem);
   });
-  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  
+  tabSection.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
+  
   block.textContent = '';
-  block.append(ul);
+  block.append(tabSection);
 }
