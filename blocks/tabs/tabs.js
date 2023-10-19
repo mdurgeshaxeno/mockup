@@ -43,5 +43,8 @@ div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
       autoHeight:true,
       items: 1
     });
+    $('.owl-dot').click(function() {
+      $('.owl-dot').trigger('to.owl.carousel', [$(this).index(), 1000]);
+    });
   });
 }
