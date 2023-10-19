@@ -369,17 +369,23 @@ main .div-container.section-one h2 {
 
 /* 2 Section */
 main .section.section-two .cards > ul {
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   margin-top: 50px
 } 
-main .section.section-two .cards > ul > li {
+.section.section-two.card-carousel-container .owl-stage {
+ display: flex;
+}
+.section.section-two.card-carousel-container .banner-carousel-item {
+    height: 100%;
+    background-color: #dadada;
+}
+.section.section-two.card-carousel-container .owl-theme .owl-item .cards-card-body {
   background-color: #dadada;
-  border: none;
   font-family: var(--fixed-font-family);
 }
-main .section.section-two .cards > ul > li > .cards-card-body:first-child {
+.section.section-two.card-carousel-container .owl-theme .owl-item .cards-card-body:first-child {
   font-family: var(--body-font-family);
   font-size: 35px;
+  width: 100%;
   margin: 0;
   text-align: center;
   background: #f2f2f2;
@@ -415,6 +421,32 @@ main .section.section-thr.div-container {
   text-align: center;
   padding-left: 300px;
   margin-top: 40px;
+}
+.section.section-thr.card-carousel-container .owl-theme .owl-item .banner-carousel-item {
+    background: #f2f2f2;
+}
+.section.section-thr.card-carousel-container .owl-theme .owl-item .cards-card-image {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.section.section-thr.card-carousel-container .owl-theme .owl-item .cards-card-image * {
+    height: 340px;
+    width: auto;
+    max-width: none;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: all 0.7s ease;
+}
+.section.section-thr.card-carousel-container .owl-theme .owl-item:hover .cards-card-image * {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1);
 }
 
 /* 5 Section */
