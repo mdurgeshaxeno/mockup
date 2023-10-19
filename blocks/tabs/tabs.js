@@ -1,25 +1,45 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
 export default function decorate(block) {
-  /* change to div with class names */
-  const tabSection = document.createElement('div');
-  tabSection.className = 'tab-section';
-  
+  /* change to div */
+  const div = document.createElement('div');
+  div.classList.add('owl-carousel', 'owl-theme', 'card-carousel-list');
   [...block.children].forEach((row) => {
-    const tabItem = document.createElement('div');
-    tabItem.className = 'tab-item';
-    while (row.firstElementChild) {
-      const div = document.createElement('div');
-      div.className = 'tab-content';
-      div.appendChild(row.firstElementChild);
-      tabItem.append(div);
-    }
-    
-    tabSection.append(tabItem);
+    const childDiv = document.createElement('div');
+    childDiv.classList.add('banner-carousel-item');
+    childDiv.innerHTML = row.innerHTML;
+    [...childDiv.children].forEach((innerDiv) => {
+      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'cards-card-image';
+      else innerDiv.className = 'cards-card-body';
+    });
+    div.append(childDiv);
   });
-  
-  tabSection.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
-  
+  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
-  block.append(tabSection);
+  block.append(div);
+
+  // Add the owl carousel script here
+  $(document).ready(function() {
+    var owl = $('.card-carousel-list');
+    owl.owlCarousel({
+      loop: true,
+      margin: 10,
+      dots: false,
+      dotsData: true,
+      nav: false,
+      autoplay: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  });
 }
