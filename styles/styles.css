@@ -427,23 +427,13 @@ main .section.section-six h2 {
   font-size: 50px;
   margin-bottom: 50px
 }
-
-/* 7 Section */
-main {
- overflow: hidden;
- width: 100%;
-}
-main .section.section-sev h2 {
-  font-size: 50px;
-  margin-bottom: 50px
-}
-main .section.section-sev.div-container {
+main .section.section-six.div-container {
     max-width: 1200px;
     margin: auto;
     display: inherit;
     position: relative;
 }
-main .section.section-sev.div-container.bg-light-white:before {
+main .section.section-six.div-container.bg-light-white:before {
   content: "";
   background: #f2f2f2;
   position: absolute;
@@ -454,17 +444,28 @@ main .section.section-sev.div-container.bg-light-white:before {
   bottom: 0;
   z-index: -1;
 }
-.section.section-sev.div-container > div {
+main .section.section-six.div-container > div {
  max-width: none;
 }
-.section.section-sev .columns-wrapper {
+main .section.section-six.div-container .columns-wrapper {
  float: left;
  width: 330px;
  padding: 0 30px;
 }
-.section.section-sev .tabs-wrapper {
+main .section.section-six.div-container .tabs-wrapper {
  overflow: auto;
 }
+
+/* 7 Section */
+main {
+ overflow: hidden;
+ width: 100%;
+}
+main .section.section-sev h2 {
+  font-size: 50px;
+  margin-bottom: 50px
+}
+
 
 /* 8 Section */
 main .section.section-eig.hero-container .hero-content {
