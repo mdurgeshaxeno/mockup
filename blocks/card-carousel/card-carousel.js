@@ -23,7 +23,7 @@ export default function decorate(block) {
     var owl = $('.card-carousel-list');
     owl.owlCarousel({
       loop: true,
-      margin: 10,
+      margin: 20,
       dots: false,
       nav: true,
       autoplay: false,
