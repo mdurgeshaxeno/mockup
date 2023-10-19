@@ -1,6 +1,8 @@
 /* below the fold CSS goes here */
 /* BOOTSTRAP CSS */
-
+* {
+    box-sizing: border-box;
+}
 /*--------------------------------------------------------------
   # Container, Row & Column
   --------------------------------------------------------------*/
