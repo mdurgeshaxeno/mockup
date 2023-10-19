@@ -422,13 +422,21 @@ main .section.section-fiv h2 {
   font-size: 70px;
 }
 
-
 /* 6 Section */
 main .section.section-six h2 {
   font-size: 50px;
   margin-bottom: 50px
 }
-main .section.section-six ul {
+main .section.section-six {
+  
+}
+
+/* 7 Section */
+main .section.section-sev h2 {
+  font-size: 50px;
+  margin-bottom: 50px
+}
+main .section.section-sev ul {
   font-family: var(--fixed-font-family);
 }
 
