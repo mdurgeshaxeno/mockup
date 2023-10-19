@@ -7,8 +7,12 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const childDiv = document.createElement('div');
     childDiv.classList.add('tabs-carousel-item');
-    childDiv.setAttribute('data-dot', 'your-value-here');
     childDiv.innerHTML = row.innerHTML;
+    const titleElement = childDiv.querySelector('.tabs-title'); // Find the tabs-title element
+    if (titleElement) {
+      const titleContent = titleElement.textContent; // Get the content of the tabs-title element
+      div.setAttribute('data-dot', titleContent); // Set the 'data-dot' attribute
+    }
     [...childDiv.children].forEach((innerDiv, index) => {
       if (index === 0) {
         innerDiv.className = 'tabs-title';
@@ -18,7 +22,7 @@ export default function decorate(block) {
     });
     div.append(childDiv);
   });
-  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  div.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]));
   block.textContent = '';
   block.append(div);
 
