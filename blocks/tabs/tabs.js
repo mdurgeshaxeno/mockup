@@ -3,14 +3,14 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 export default function decorate(block) {
   /* change to div */
   const div = document.createElement('div');
-  div.classList.add('owl-carousel', 'owl-theme', 'card-carousel-list');
+  div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
   [...block.children].forEach((row) => {
     const childDiv = document.createElement('div');
-    childDiv.classList.add('banner-carousel-item');
+    childDiv.classList.add('tabs-carousel-item');
     childDiv.innerHTML = row.innerHTML;
     [...childDiv.children].forEach((innerDiv) => {
-      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'cards-card-image';
-      else innerDiv.className = 'cards-card-body';
+      if (innerDiv.children.length === 1 && innerDiv.querySelector('picture')) innerDiv.className = 'tabs-image';
+      else innerDiv.className = 'tabs-body';
     });
     div.append(childDiv);
   });
@@ -20,9 +20,9 @@ export default function decorate(block) {
 
   // Add the owl carousel script here
   $(document).ready(function() {
-    var owl = $('.card-carousel-list');
+    var owl = $('.tabs-carousel-list');
     owl.owlCarousel({
-      loop: true,
+      loop: false,
       margin: 10,
       dots: false,
       dotsData: true,
