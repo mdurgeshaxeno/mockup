@@ -429,6 +429,10 @@ main .section.section-six h2 {
 }
 
 /* 7 Section */
+main {
+ overflow: hidden;
+ width: 100%;
+}
 main .section.section-sev h2 {
   font-size: 50px;
   margin-bottom: 50px
