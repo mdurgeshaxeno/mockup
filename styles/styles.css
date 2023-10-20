@@ -472,8 +472,7 @@ main .section.section-thr.div-container {
 
 /* 6 Section */
 body {
- overflow: hidden;
- width: 100%;
+ overflow-x: hidden;
 }
 main .section.section-six h2 {
   margin-bottom: 50px
