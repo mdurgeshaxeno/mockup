@@ -37,9 +37,9 @@ font-family: 'Poppins', sans-serif;
   --text-color-white: #ffffff;
 
   /* fonts */
-  --body-font-family: 'Oswald', sans-serif;
+  --body-font-family: "tungstenw05-medium", "Oswald", sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Poppins', sans-serif;
+  --fixed-font-family: myriad-pro, Arial;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -62,7 +62,7 @@ body, html {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-font-size-xs);
   font-weight: 300;
   padding: 0;
   margin: 0;
