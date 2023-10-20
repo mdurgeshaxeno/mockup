@@ -10,10 +10,21 @@
  * governing permissions and limitations under the License.
  */
 
- /* font-family: 'Oswald', sans-serif;
- font-family: 'Poppins', sans-serif; */
- @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200;300;400&display=swap');
- 
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200;300;400&display=swap');
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
+@import url("https://use.typekit.net/nkq8fly.css");
+@font-face {
+  font-family: "tungstenw05-medium";
+  src: url("../fonts/tungstenw05-medium.woff2") format("woff2"), url("../fonts/tungstenw05-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
  :root {
   /* colors */
