@@ -37,8 +37,8 @@ font-family: 'Poppins', sans-serif;
   --text-color-white: #ffffff;
 
   /* fonts */
-  --body-font-family: "tungstenw05-medium", "Oswald", sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: myriad-pro, Arial;
+  --heading-font-family: "tungstenw05-medium", "Oswald", sans-serif;
   --fixed-font-family: myriad-pro, Arial;
 
   /* body sizes */
@@ -151,7 +151,7 @@ pre {
   font-size: 26px;
   overflow: hidden;
   font-weight: 500;
-  font-family: "tungstenw05-medium", "Oswald", sans-serif;
+  font-family: var(--heading-font-family);
   text-transform: uppercase;
 }
 .button-container .button:before {
@@ -312,7 +312,6 @@ main .section[data-section-status='initialized'] {
 
 /* Section Default */
 main .section h2 {
-  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 70px;
   margin: 0
