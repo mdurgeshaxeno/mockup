@@ -4,15 +4,16 @@ header.header-wrapper {
   top: 0;
   left: 0;
   right: 0;
-  max-width: 1200px;
-  margin: auto;
   z-index: 2;
 }
 header.header-wrapper.sticky-header {
   background-color: #061838;
 }
+header.header-wrapper .header {
+  max-width: 1200px;
+  margin: auto;
+}
 header.header-wrapper nav {
-  box-sizing: border-box;
   display: grid;
   grid-template:
     'hamburger brand tools' var(--nav-height)
@@ -79,6 +80,9 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::before {
 }
 header nav[aria-expanded="true"] .nav-hamburger-icon::after {
   top: 6px;
+}
+body:has(header nav[aria-expanded="false"]) {
+    overflow-y: hidden;
 }
 header nav[aria-expanded="false"] {
   grid-template:
@@ -167,9 +171,16 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   header {
     padding: 0 15px;
+  }
+  .overlay {
+      width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .overlay {
+      width: 100%;
   }
 }
