@@ -175,12 +175,12 @@ header nav .nav-tools {
   header {
     padding: 0 15px;
   }
-  .overlay {
+  header nav .nav-sections {
       width: 40%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .overlay {
+  header nav .nav-sections {
       width: 100%;
   }
 }
