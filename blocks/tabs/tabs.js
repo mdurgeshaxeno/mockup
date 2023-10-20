@@ -46,5 +46,26 @@ div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
     $('.owl-dot').click(function() {
       $('.owl-dot').trigger('to.owl.carousel', [$(this).index(), 1000]);
     });
+    // Get the source and target div elements by their classes
+    var sourceDiv1 = $('.owl-stage .owl-item:nth-child(1) .tabs-carousel-item .tabs-title');
+    var targetDiv1 = $('.owl-dots .owl-dot:nth-child(1)');
+    var sourceDiv2 = $('.owl-stage .owl-item:nth-child(2) .tabs-carousel-item .tabs-title');
+    var targetDiv2 = $('.owl-dots .owl-dot:nth-child(2)');
+    var sourceDiv3 = $('.owl-stage .owl-item:nth-child(3) .tabs-carousel-item .tabs-title');
+    var targetDiv3 = $('.owl-dots .owl-dot:nth-child(3)');
+    
+    if (sourceDiv1.length > 0 && targetDiv1.length > 0) {
+      // Append the text from the source div to the target div
+      targetDiv1.html(sourceDiv1.html());
+    }
+    if (sourceDiv2.length > 0 && targetDiv2.length > 0) {
+      // Append the text from the source div to the target div
+      targetDiv2.html(sourceDiv2.html());
+    }
+    if (sourceDiv3.length > 0 && targetDiv3.length > 0) {
+      // Append the text from the source div to the target div
+      targetDiv3.html(sourceDiv3.html());
+    }
+    
   });
 }
