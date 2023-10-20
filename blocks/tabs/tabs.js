@@ -10,7 +10,7 @@ div.classList.add('owl-carousel', 'owl-theme', 'tabs-carousel-list');
   childDiv.classList.add('tabs-carousel-item');
   
   // Generate a random number and add it to 'your-value-here'
-  const randomNumber = Math.floor(Math.random() * 1000); // You can adjust the range as needed
+  const randomNumber = Math.floor(Math.random() * 10); // You can adjust the range as needed
   const dataDotValue = `tab-${randomNumber}`;
   
   childDiv.setAttribute('data-dot', dataDotValue);
