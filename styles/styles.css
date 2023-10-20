@@ -584,10 +584,7 @@ main .section.section-eig .button-container .button:focus {
 main .section.section-nin h2 {
   margin-bottom: 50px;
 }
-main .section.section-nin.hero-container > div {
-  max-width: 1200px;
-}
-main .section.section-nin.hero-container .columns.block.columns-2-cols div[data-valign="middle"] {
+main .section.section-nin .columns.block.columns-2-cols div[data-valign="middle"] {
   position: relative;
 }
 main .section.section-nin .button-container .button {
