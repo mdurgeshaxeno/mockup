@@ -584,12 +584,12 @@ main .section.section-eig .button-container .button:focus {
 main .section.section-nin.hero-container > div {
   max-width: 1200px;
 }
-main .section.section-nin.hero-container .hero-wrapper {
-  margin-top: 75px;
+main .section.section-nin.hero-container .columns.block.columns-2-cols div[data-valign="middle"] {
+  position: relative;
 }
 main .section.section-nin .button-container .button {
   font-family: var(--fixed-font-family);
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-color-white);
   width: 100px;
   height: 100px;
@@ -598,7 +598,7 @@ main .section.section-nin .button-container .button {
   border-radius: 50px;
   font-weight: 400;
   border: transparent;
-  line-height: 28px;
-  padding: 20px 10px;
+  line-height: 100px;
+  padding: 0px 0px;
   text-transform: capitalize;
 }
