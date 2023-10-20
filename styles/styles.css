@@ -18,13 +18,8 @@ font-family: 'Poppins', sans-serif;
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
 @import url("https://use.typekit.net/nkq8fly.css");
-@font-face {
-  font-family: "tungstenw05-medium";
-  src: url("../fonts/tungstenw05-medium.woff2") format("woff2"), url("../fonts/tungstenw05-medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@font-face { font-family: "tungstenw05-medium"; font-weight: 500; font-style: normal; font-display: swap;
+  src: url("../fonts/tungstenw05-medium.woff2") format("woff2"), url("../fonts/tungstenw05-medium.woff") format("woff"); }
 
  :root {
   /* colors */
@@ -47,8 +42,8 @@ font-family: 'Poppins', sans-serif;
   --body-font-size-xs: 14px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
+  --heading-font-size-xxl: 80px;
+  --heading-font-size-xl: 70px;
   --heading-font-size-l: 32px;
   --heading-font-size-m: 24px;
   --heading-font-size-s: 20px;
@@ -94,9 +89,28 @@ h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
+
+@media (min-width: 900px) {  
+  .div-container > div {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {  
+  /* :root {
+    --heading-font-size-xxl: 60px;
+    --heading-font-size-xl: 48px;
+    --heading-font-size-l: 36px;
+    --heading-font-size-m: 30px;
+    --heading-font-size-s: 24px;
+    --heading-font-size-xs: 22px;  
+  } */
+}
+
 dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: var(--body-font-size-s);
 }
 
 a:any-link {
@@ -265,22 +279,6 @@ main img {
   }  
 } */
 
-@media (min-width: 900px) {
-  :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;  
-  }
-  
-  .div-container > div {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
 .text-center {
   text-align: center;
 }
@@ -313,24 +311,23 @@ main .section[data-section-status='initialized'] {
 /* Section Default */
 main .section h2 {
   font-weight: 400;
-  font-size: 70px;
+  font-size: var(--heading-font-size-xl);
   margin: 0
 }
 @media only screen and (max-width: 1024px) {
   main .section h2 {
-    font-size: 70px;
+    font-size: var(--heading-font-size-xl);
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
   main .section h2 {
-    font-size: 50px;
+    font-size: var(--heading-font-size-xl);
   }
 }
 
 main .section p {
   font-family: var(--fixed-font-family);
-  font-size: 18px;
-  /* font-size: var(--heading-font-size-xs); */
+  font-size: var(--heading-font-size-xs);
   font-weight: 300;
 }
 
@@ -338,6 +335,8 @@ main .section p {
 main .section .button-container,
 main .section .button-container .button {
   margin-bottom: 0;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-m);
 }
 main .section .button-container .button {
   border-radius: 0;
@@ -345,7 +344,6 @@ main .section .button-container .button {
   margin-top: 0;
   color: #df9926;
   border-color: #df9926;
-  font-size: 20px;
 }
 main .section .button-container .button:before,
 main .section .button-container .button:hover,
@@ -371,10 +369,10 @@ main .div-container.section-one > div {
   max-width: 930px;
 }
 main .div-container.section-one p {
-  font-size: var(--heading-font-size-s);
+  font-size: var(--heading-font-size-m);
 }
 main .div-container.section-one h2 {
-   font-size: 80px;
+   font-size: var(--heading-font-size-xxl);
 } 
 
 /* 2 Section */
@@ -392,7 +390,7 @@ main .section.section-two .cards > ul {
   font-family: var(--fixed-font-family);
 }
 .section.section-two.card-carousel-container .owl-theme .owl-item .cards-card-body:first-child {
-  font-family: var(--body-font-family);
+  font-family: var(--heading-font-family);
   font-size: 35px;
   width: 100%;
   margin: 0;
@@ -463,13 +461,9 @@ main .section.section-thr.div-container {
 }
 
 /* 5 Section */
-main .section.section-fiv h2 {
-  font-size: 70px;
-}
 
 /* 6 Section */
 main .section.section-six h2 {
-  font-size: 50px;
   margin-bottom: 50px
 }
 main .section.section-six.div-container {
@@ -500,6 +494,9 @@ main .section.section-six.div-container .columns-wrapper {
 main .section.section-six.div-container .tabs-wrapper {
  overflow: auto;
 }
+main .section.section-six.div-container .tabs-wrapper .tabs-carousel-list.owl-carousel .owl-dots .owl-dot {
+  font-family: var(--heading-font-family);
+}
 
 /* 7 Section */
 main {
@@ -507,7 +504,6 @@ main {
  width: 100%;
 }
 main .section.section-sev h2 {
-  font-size: 50px;
   margin-bottom: 50px
 }
 
@@ -518,8 +514,8 @@ main .section.section-eig.hero-container .hero-content {
   margin: auto;
   color: #ffffff;
 }
-main .section.section-eig .hero-content h2 {
-  font-size: 70px;
+main .section.section-eig.hero-container p {
+  font-size: var(--heading-font-size-m);
 }
 main .section.section-eig .button-container .button {
   color: var(--text-color-white);
