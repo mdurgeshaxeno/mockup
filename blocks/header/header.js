@@ -143,3 +143,22 @@ export default async function decorate(block) {
     block.append(navWrapper);
   }
 }
+
+/**
+ * Add a sticky class to the header after 70px of scroll
+ */
+function addStickyHeader() {
+  const header = document.querySelector('.header-wrapper'); // Replace 'your-header-class' with your actual header class name
+
+  if (window.pageYOffset > 70) {
+    header.classList.add('sticky-header'); // Add your sticky header class
+  } else {
+    header.classList.remove('sticky-header');
+  }
+}
+
+// Add a scroll event listener to check for scroll position
+window.addEventListener('scroll', addStickyHeader);
+
+// Call addStickyHeader initially in case the page is already scrolled
+addStickyHeader();
