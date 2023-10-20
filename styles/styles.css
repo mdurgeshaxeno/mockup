@@ -471,6 +471,10 @@ main .section.section-thr.div-container {
 }
 
 /* 6 Section */
+body {
+ overflow: hidden;
+ width: 100%;
+}
 main .section.section-six h2 {
   margin-bottom: 50px
 }
@@ -508,10 +512,6 @@ main .section.section-six.div-container .tabs-wrapper .tabs-carousel-list.owl-ca
 }
 
 /* 7 Section */
-main {
- overflow: hidden;
- width: 100%;
-}
 main .section.section-sev h2 {
   margin-bottom: 50px
 }
