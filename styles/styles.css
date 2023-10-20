@@ -581,6 +581,9 @@ main .section.section-eig .button-container .button:focus {
 }
 
 /* 9 Section */
+main .section.section-nin h2 {
+  margin-bottom: 50px;
+}
 main .section.section-nin.hero-container > div {
   max-width: 1200px;
 }
