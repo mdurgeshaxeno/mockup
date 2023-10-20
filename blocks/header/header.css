@@ -1,7 +1,7 @@
 /* header and nav layout */
 header {
   position: absolute;
-  top: 50px;
+  top: 0;
   left: 0;
   right: 0;
   max-width: 1200px;
@@ -160,7 +160,7 @@ header nav .nav-sections {
   position: fixed;
   width: 25%;
   height: 100%;
-  top: 50px;
+  top: 0px;
   right: 0;
   z-index: 1;
   padding: 40px 20px 20px;
