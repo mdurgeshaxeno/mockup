@@ -379,7 +379,6 @@ main .section.section-two .cards > ul {
     background-color: #dadada;
 }
 .section.section-two.card-carousel-container .owl-theme .owl-item .cards-card-body {
-  background-color: #dadada;
   font-family: var(--fixed-font-family);
 }
 .section.section-two.card-carousel-container .owl-theme .owl-item .cards-card-body:first-child {
@@ -422,8 +421,12 @@ main .section.section-thr.div-container {
   padding-left: 300px;
   margin-top: 40px;
 }
-.section.section-thr.card-carousel-container .owl-theme .owl-item .banner-carousel-item {
+.section.section-thr.card-carousel-container .owl-stage {
+ display: flex;
+}
+.section.section-thr.card-carousel-container .banner-carousel-item {
     background: #f2f2f2;
+    height: 100%;
 }
 .section.section-thr.card-carousel-container .owl-theme .owl-item .cards-card-image {
     width: 100%;
